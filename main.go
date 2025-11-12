@@ -13,8 +13,8 @@ func helloHandler(w http.ResponseWriter, r *http.Request) {
 func main() {
 	http.HandleFunc("/hello", helloHandler)
 
-	fmt.Println("Server is running on http://localhost:8082")
-	fmt.Println("Visit http://localhost:8082/hello")
+	fmt.Println("Server is running on http://localhost:8080")
+	fmt.Println("Visit http://localhost:8080/hello")
 
-	log.Fatal(http.ListenAndServe(":8082", nil))
+	log.Fatal(http.ListenAndServe(":8080", nil))
 }
